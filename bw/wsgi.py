@@ -1,5 +1,5 @@
 """
-WSGI config for bw project.
+WSGI config for bw-server project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
