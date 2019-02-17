@@ -26,6 +26,6 @@ urlpatterns = [
     url(r'^b0r3d/', admin.site.urls),
     url(r'^', include('bored.urls', namespace='bored')),
     url(r'^api-token-auth/', obtain_jwt_token),
- ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ ] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

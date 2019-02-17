@@ -23,7 +23,10 @@ from .permissions import (IsUserOnly)
 from .serializers import (UserSerializer)
 
 
-#
+
+def login_page(request):
+    return render(request, "login.html")
+
 @csrf_exempt
 def login_user(request):
     json_data = get_json(request)
@@ -58,6 +61,8 @@ def logout(request):
     print(request.__dict__)
     return
 
+def index(request):
+    return render(request, 'index.html')
 
 
 
