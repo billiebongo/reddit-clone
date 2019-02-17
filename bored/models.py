@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
+    name = models.CharField('Name', max_length=40)
     username = models.EmailField(blank=False, unique=True)
     location = models.ForeignKey('Location', null=True, blank=True) #country
     is_verified = models.BooleanField(default=False)
