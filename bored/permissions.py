@@ -16,13 +16,9 @@ class IsUserOnly(permissions.BasePermission):
         return False
 
     def has_permission(self, request, view):
-        print(request.user.is_staff)
-        print(request.user)
-        print(request.__dict__)
         if view.action == 'list':
             return request.user.is_staff
         if request.user.is_staff:
-
             return True
         if (request.method == 'PATCH') or (request.method in permissions.SAFE_METHODS):
             return True

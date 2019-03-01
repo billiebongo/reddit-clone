@@ -1,0 +1,6 @@
+{
+    "SECRET_KEY" : "My secret key here",
+    "DATABASE_URL" : "postgres://user:pwd@localhost:5432/mysitedb",
+    "DEBUG" : "True"
+
+}

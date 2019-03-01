@@ -14,6 +14,7 @@ from django.contrib.gis.geos import Point
 
 
 
+
 class Location(models.Model):
     address = models.CharField(max_length=20, blank=False)
     lat = models.FloatField()
