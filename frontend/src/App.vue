@@ -9,5 +9,7 @@
     export default {}
 </script>
 <style>
-
+    input, .ui .button {
+        border-radius: 25px !important;
+    }
 </style>

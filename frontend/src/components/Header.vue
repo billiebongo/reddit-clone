@@ -1,13 +1,19 @@
 <template>
     <div class="ui secondary menu">
         <!--put website logo here?-->
-        <router-link to="/">Home</router-link>
+        <div class="item">
+            <router-link to="/"><i class="home icon"></i></router-link>
+        </div>
+
 
         <!--just placing this search bar function here for fun-->
         <div class="item">
-            <div class="ui icon input">
-                <input type="text" placeholder="Search...">
-                <i class="search link icon"></i>
+            <div class="ui search">
+                <div class="ui icon input">
+                    <input class="prompt" type="text" placeholder="Search...">
+                    <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
             </div>
         </div>
 
