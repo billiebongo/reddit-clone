@@ -2,49 +2,41 @@
     <div>
         <div class="ui container">
             <app-header></app-header>
-        </div>
-        <div class="ui middle aligned two column centered grid">
-            <div class="row">
-                <div class="column">
-                    <div class="ui placeholder segment">
-                        <div class="ui two column very relaxed stackable grid">
-                            <div class="column">
-                                <div class="ui large form">
-                                    <div class="field">
-                                        <label>Username</label>
-                                        <div class="ui left icon input">
-                                            <input type="text" placeholder="Username">
-                                            <i class="user icon"></i>
-                                        </div>
+
+            <div class="ui middle aligned four column centered grid">
+                <div class="ui placeholder segment">
+                    <div class="ui two column very relaxed divided stackable grid">
+                        <div class="column">
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Username</label>
+                                    <div class="ui left icon input">
+                                        <input type="text" placeholder="Username">
+                                        <i class="user icon"></i>
                                     </div>
-                                    <div class="field">
-                                        <label>Password</label>
-                                        <div class="ui left icon input">
-                                            <input type="password" placeholder="Password">
-                                            <i class="lock icon"></i>
-                                        </div>
-                                    </div>
-                                    <div class="ui blue submit button">Login</div>
                                 </div>
-                            </div>
-                            <div class="middle aligned column">
-                                <router-link to="/signup">
-                                    <div class="ui big button">
-                                        <i class="signup icon"></i>
-                                        Sign Up
+                                <div class="field">
+                                    <label>Password</label>
+                                    <div class="ui left icon input">
+                                        <input type="password" placeholder="Password">
+                                        <i class="lock icon"></i>
                                     </div>
-                                </router-link>
+                                </div>
+                                <div class="ui blue submit button">Login</div>
                             </div>
                         </div>
 
-                        <div class="ui vertical divider">
-                            Or
+                        <div class="middle aligned column">
+                            <router-link to="/signup">
+                                <div class="ui big button">
+                                    <i class="signup icon"></i>
+                                    Sign Up
+                                </div>
+                            </router-link>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 
@@ -62,5 +54,21 @@
 </script>
 
 <style scoped>
+    #center-hozi-verti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
 
+    #outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+        position: relative;
+        flex-wrap: wrap;
+    }
 </style>

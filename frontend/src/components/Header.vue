@@ -1,11 +1,9 @@
 <template>
-    <div class="ui secondary menu">
+    <div class="ui secondary menu stackable">
         <!--put website logo here?-->
         <div class="item">
             <router-link to="/"><i class="home icon"></i></router-link>
         </div>
-
-
         <!--just placing this search bar function here for fun-->
         <div class="item">
             <div class="ui search">
