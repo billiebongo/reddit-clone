@@ -1,13 +1,17 @@
 <template>
     <div>
         <div class="ui container">
-            <h1>Title</h1>
+            <app-header></app-header>
         </div>
     </div>
 </template>
 
 <script>
+    import Header from "./Header.vue";
     export default {
+        components: {
+            'app-header': Header
+        }
     }
 </script>
 
